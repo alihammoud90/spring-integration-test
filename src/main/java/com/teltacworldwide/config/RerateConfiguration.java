@@ -15,7 +15,6 @@ public class RerateConfiguration {
         this.taskScheduler = taskScheduler;
     }
 
-    //Used in order to wait for all batches of rerated CDRs to be saved (and to avoid loop again over list of filteredCDRs after aggregator)
     @Bean
 //    @PostConstruct
     @ServiceActivator(inputChannel = "rerateDelayerChannel")
